@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drake Reed</title>
   <link rel="stylesheet" href="style.css" />
+<script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
 </head>
 <body>
 
@@ -19,57 +20,262 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div>
-        <p class="eyebrow">Environmental Justice · Mapping · Public Health</p>
-        <h2>Environmental justice researcher, geographer, and interdisciplinary artist.</h2>
-        <p>
-          I work across air quality monitoring, public health research, mapping, and community storytelling.
-          My work examines how environmental burdens shape everyday life and how data can support
-          community-centered environmental justice work.
-        </p>
-      </div>
-      <img src="assets/breathe-easy-map.jpg" alt="Breathe Easy Berkshires map screenshot">
-    </section>
+   <section class="hero">
+
+  <div class="hero-slideshow">
+
+    <img src="assets/hero1.png" class="slide active" alt="">
+    <img src="assets/hero2.jpg" class="slide" alt="">
+    <img src="assets/hero3.png" class="slide" alt="">
+    <img src="assets/hero4.jpeg" class="slide" alt="">
+    <img src="assets/hero5.png" class="slide" alt="">
+    <img src="assets/hero6.jpg" class="slide active" alt="">
+    <img src="assets/hero7.png" class="slide" alt="">
+    <img src="assets/hero8.jpg" class="slide" alt="">
+    <img src="assets/hero9.jpg" class="slide" alt="">
+    <img src="assets/hero10.png" class="slide" alt="">
+    <img src="assets/hero11.jpg" class="slide" alt="">
+    <img src="assets/hero12.jpg" class="slide" alt="">
+    <img src="assets/hero13.png" class="slide" alt="">
+    <img src="assets/hero14.jpg" class="slide" alt="">
+
+  </div>
+
+  <div class="hero-overlay">
+
+    <h2>
+      Environmental Justice Researcher,
+      Geographer, & Interdisciplinary Artist
+    </h2>
+
+    <p class="hero-description">
+     
+    </p>
+
+  </div>
+
+</section>
 
     <section id="work" class="section">
       <h2>Featured Work</h2>
 
       <div class="project-grid">
-        <article class="card">
-          <img src="assets/breathe-easy-map.jpg" alt="Breathe Easy Berkshires map">
-          <h3>Breathe Easy Berkshires</h3>
-          <p>
-            EPA-funded air quality monitoring and public health research in Pittsfield, Massachusetts.
-            This project connected PM₂.₅ monitoring, CDC PLACES health indicators, Environmental Justice geography,
-            and community interviews.
-          </p>
-          <p class="tags">ArcGIS · Air Quality · Public Health · Environmental Justice</p>
-        </article>
+        <a class="card text-card" href="#breathe-easy">
 
-        <article class="card">
-          <img src="assets/climate-project.jpg" alt="Climate vulnerability project">
-          <h3>Climate Vulnerability Analysis</h3>
-          <p>
-            Environmental research and reporting supporting climate adaptation planning, public health,
-            infrastructure analysis, and equity-based decision-making.
-          </p>
-          <p class="tags">Climate Adaptation · Research · Urban Systems</p>
-        </article>
+  <h3>Breathe Easy Berkshires</h3>
 
-        <article class="card">
-          <img src="assets/workshops.jpg" alt="Workshop documentation">
-          <h3>Mapping Systems & Workshops</h3>
-          <p>
-            Participatory mapping, zines, and workshops exploring surveillance, resistance, infrastructure,
-            and environmental justice.
-          </p>
-          <p class="tags">Workshops · Zines · Story Mapping · Participatory Art</p>
-        </article>
+  <p>
+    EPA-funded air quality monitoring and public health research in Pittsfield,
+    Massachusetts. This work integrated PM₂.₅, NO₂, and VOC monitoring with
+    public health data, Environmental Justice geographies, and community interviews.
+  </p>
+
+  <p class="tags">
+    ArcGIS · Air Quality · Public Health · Environmental Justice
+  </p>
+
+</a>
+
+<a class="card text-card" href="#via">
+
+  <h3>Climate Vulnerability, Impact, and Adaptation Analysis</h3>
+
+  <p>
+    Climate adaptation research supporting New York City’s planning around future
+    climate risk, public health, infrastructure, and environmental justice.
+  </p>
+
+  <p class="tags">
+    Climate Adaptation · Research · Project Management · Urban Systems
+  </p>
+
+</a>
+
+<a class="card text-card" href="#workshops">
+  <h3>Mapping Systems & Workshops</h3>
+
+  <p>
+    Participatory mapping, zines, and workshops exploring surveillance,
+    resistance, infrastructure, and environmental justice.
+  </p>
+
+  <p class="tags">
+    Workshops · Zines · Story Mapping · Participatory Art
+  </p>
+</a>
       </div>
     </section>
 
-    <section id="methods" class="section methods">
+    <section id="breathe-easy" class="section feature-section">
+      <p class="eyebrow">Featured Case Study</p>
+      <h2>Breathe Easy Berkshires</h2>
+    
+      <div class="feature-grid">
+        <div>
+          <p class="large-text">
+            Breathe Easy Berkshires was a EPA-funded air quality monitoring and public health research project in Pittsfield, Massachusetts.
+          </p>
+    
+          <p>
+The project connected air quality monitoring data with public health and Environmental Justice indicators to better understand how pollution is experienced across Pittsfield neighborhoods. Drake's role included spatial analysis, interactive map design, public health research, community engagement, and environmental data visualization using ArcGIS and public datasets such as CDC PLACES.          </p>
+    
+          <p>
+The resulting interactive public map allows residents, researchers, and local organizations to explore air quality conditions alongside modeled health indicators, wildfire smoke impacts, and Environmental Justice geographies. Together, the project’s findings support future community-based air quality research, public communication strategies, and environmental justice advocacy in Pittsfield.
+
+Further project findings, maps, and analysis can be explored through the 
+<a href="https://drive.google.com/file/d/1UK6C0IgMDpiWoFP2y58y4dYxYzlSdpuu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+  full Breathe Easy Berkshires EPA final report.
+  </a>
+    </p>
+    
+          <div class="tag-row">
+            <span>ArcGIS</span>
+            <span>PM₂.₅</span>
+            <span>CDC PLACES</span>
+            <span>Environmental Justice</span>
+            <span>Public Health</span>
+          </div>
+        </div>
+    
+  <div class="map-embed">
+  <arcgis-embedded-map
+    style="height:600px;width:100%;"
+    item-id="56589d8d56cc43a2ace90dea59bb5333"
+    theme="light"
+    heading-enabled
+    legend-enabled
+    time-zone-label-enabled
+    center="-73.23071863831814,42.447968467627334"
+    scale="72223.819286"
+    portal-url="https://beatdata.maps.arcgis.com">
+  </arcgis-embedded-map>
+</div>
+
+<a class="map-button" href="https://arcg.is/1Paz9v4" target="_blank" rel="noopener noreferrer">
+  Open full interactive map →
+</a>
+</div> <!-- closes feature-grid -->
+</section> <!-- closes breathe-easy -->
+
+<section id="via" class="section feature-section">
+  <p class="eyebrow">Featured Case Study</p>
+  <h2>Climate Vulnerability, Impact, and Adaptation Analysis</h2>
+
+  <div class="feature-grid">
+    <div>
+      <p class="large-text">
+        The Climate Vulnerability, Impact, and Adaptation Analysis was an 18-month study developed to support climate planning and environmental justice work in New York City.
+      </p>
+
+      <p>
+        As part of the project management team at The Tishman Environment and Design Center, Drake worked alongside researchers, climate scientists, and planners to support climate vulnerability and adaptation research. In collaboration with the Mayor’s Office of Climate and Environmental Justice, interagency partners, and the New York City Panel on Climate Change, the project developed data-driven analyses examining future climate conditions and their social and economic impacts across the city.
+      </p>
+
+      <p>
+        The study explored four key areas: climate risk projections and compound or sequential hazards; extreme rainfall projections; the economic and public health impacts of climate change; and the development of a Flood Vulnerability Index. The VIA process was designed to support climate and environmental justice-centered planning by helping policymakers better understand future risks and vulnerabilities across New York City.
+      </p>
+
+      <div class="tag-row">
+        <span>Climate Adaptation</span>
+        <span>Project Management</span>
+        <span>Environmental Justice</span>
+        <span>Urban Systems</span>
+        <span>Public Health</span>
+      </div>
+
+      <a class="map-button" href="https://www.nyc.gov/content/climate/pages/reports-and-publications/climate-vulnerability-impact-and-adaptation-analysis-via" target="_blank" rel="noopener noreferrer">
+        Open full VIA report →
+      </a>
+
+
+    </div>
+
+    <div class="project-media">
+      <img src="assets/hero6.jpg" alt="Climate Vulnerability, Impact, and Adaptation Analysis report cover">
+    </div>
+  </div>
+
+  <div class="tishman-visuals">
+
+    <div class="tishman-copy">
+      <h3>Additional Work at The Tishman Center</h3>
+
+      <p>
+        Drake's expertise in urban design and data visualization enabled him to produce
+        visualizations communicating complex climate research and Environmental
+        Justice movement-building initiatives at The Tishman Environment and
+        Design Center.
+      </p>
+
+      <p>
+        This included designing the annual reports, supporting a symposium on
+        climate and environmental justice, and creating visual narrative maps
+        and graphics documenting environmental justice initiatives across
+        multiple Tishman Center programs and research areas.
+      </p>
+    </div>
+
+    <div class="tishman-slideshow">
+      <img src="assets/hero8.jpg" class="t-slide active" alt="">
+      <img src="assets/hero11.jpg" class="t-slide" alt="">
+      <img src="assets/hero12.jpg" class="t-slide" alt="">
+      <img src="assets/hero19.png" class="t-slide" alt="">
+      <img src="assets/hero20.png" class="t-slide" alt="">
+      <img src="assets/hero21.jpeg" class="t-slide" alt="">
+    </div>
+
+  </div>
+</section>
+
+<section id="workshops" class="section feature-section">
+
+  <p class="eyebrow">Featured Case Study</p>
+
+  <h2>Mapping Systems & Workshops</h2>
+
+  <div class="feature-grid">
+
+    <div>
+
+      <p class="large-text">
+        Mapping Systems & Workshops brings together zines, participatory mapping,
+        and public education to explore surveillance, resistance, infrastructure,
+        and environmental justice.
+      </p>
+
+      <p>
+        This work uses visual storytelling and collaborative exercises to help
+        participants understand complex systems and locate themselves within
+        histories of power, place, and resistance.
+      </p>
+
+      <div class="tag-row">
+        <span>Zines</span>
+        <span>Workshops</span>
+        <span>Participatory Mapping</span>
+        <span>Storytelling</span>
+      </div>
+
+    </div>
+
+<div class="workshop-slideshow">
+
+  <img src="assets/hero5.png" class="w-slide active" alt="">
+  <img src="assets/hero10.png" class="w-slide" alt="">
+  <img src="assets/hero22.jpg" class="w-slide" alt="">
+  <img src="assets/hero23.jpg" class="w-slide" alt="">
+  <img src="assets/hero26.png" class="w-slide" alt="">
+  <img src="assets/hero25.jpg" class="w-slide" alt="">
+  <img src="assets/hero24.jpg" class="w-slide" alt="">
+
+</div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="methods" class="section methods">
       <h2>Methods</h2>
       <div class="method-grid">
         <div><h3>Mapping & GIS</h3><p>ArcGIS, EJ mapping, CDC PLACES, spatial analysis.</p></div>
@@ -79,16 +285,25 @@
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <h2>About</h2>
-      <p>
-        Drake Reed is an interdisciplinary artist, geographer, and environmental justice advocate whose work
-        investigates the relationship between the built environment, air quality, and community health.
-        His work combines research, mapping, public health data, and storytelling to support community-centered
-        environmental justice projects.
-      </p>
-    </section>
-  </main>
+<section id="about" class="section about">
 
+  <div class="about-image">
+    <img src="assets/hero27.png" alt="Portrait of Drake Reed">
+  </div>
+
+  <h2>About</h2>
+
+  <p>
+ Drake is an interdisciplinary artist, geographer, and practitioner-scholar whose work investigates environmental justice (EJ) in frontline communities, as well as state sponsored violence. 
+ In his career as a EJ scholar, he blends data visualization and qualitative methods to develop climate science reports and participatory art on a community level. Through his art Drakes mission
+ is to preserve the history of Black and oppressed people's liberation, protecting it from whitewashing, and sharing it as an accessible educational resource. His work is grounded in urban design
+ and cartography, he uses mapping as a medium to archive resistance movements and critique state-sponsored surveillance mechanisms. He also experiments with illustration, photography, and printmaking 
+ to tell stories of both abolition and the evolution of settler colonial constructs. 
+  </p>
+
+</section>
+
+  </main>
+<script src="script.js"></script>
 </body>
 </html>
